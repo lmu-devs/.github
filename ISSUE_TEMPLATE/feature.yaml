@@ -1,0 +1,50 @@
+name: Feature Request
+description: Suggest a new feature to be implemented across any repository
+title: "[FEATURE]: "
+labels: [feature, enhancement]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Feature Request
+        Please fill out the following sections to help us understand and prioritize your request.
+
+- type: checkboxes
+    id: repo
+    attributes:
+      label: Affected Repository
+      description: Select one or more repositories that this feature affects.
+      options:
+        - label: lmu_app_client
+        - label: lmu_app_backend
+        - label: lmu_app_cms
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe what the app should have and why it needs to be implemented.
+      placeholder: Describe the feature's purpose, problem it solves, or user story.
+    validations:
+      required: true
+
+  - type: textarea
+    id: business_logic
+    attributes:
+      label: Business Logic
+      description: Explain the functional or business-side requirements.
+      placeholder: What rules, goals, or workflows drive this feature?
+    validations:
+      required: false
+
+  - type: textarea
+    id: technical
+    attributes:
+      label: Technical
+      description: Outline any technical implementation details or constraints.
+      placeholder: Suggested architecture, dependencies, limitations, or tradeoffs.
+    validations:
+      required: false
