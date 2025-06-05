@@ -2,7 +2,7 @@
 name: ✨ Feature Request
 about: Suggest an idea or new functionality for our project.
 title: "[FEAT]: "
-labels: enhancement, feature
+labels: ''
 assignees: ''
 ---
 
