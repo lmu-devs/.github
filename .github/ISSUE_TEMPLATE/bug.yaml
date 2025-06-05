@@ -1,5 +1,5 @@
 ---
-name: 🐛 Bug Report Yaml
+name: 🐛 Bug Report
 description: Report an unexpected problem, error, or behavior.
 title: "[BUG]: "
 labels: []
@@ -12,14 +12,25 @@ body:
 
         Report something that isn't working as expected.
 
-  - type: input
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
     id: summary
     attributes:
       label: 📝 Summary
       description: Briefly describe the bug in one or two sentences.
-      placeholder: e.g. "Button click leads to blank screen"
+
+      placeholder: Button click leads to blank screen ...
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
 
   - type: textarea
     id: steps
@@ -33,26 +44,36 @@ body:
     validations:
       required: true
 
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
   - type: textarea
     id: behavior
     attributes:
       label: ⚠️ Current vs. Expected Behavior
       description: |
         What is happening now, and what did you expect to happen instead?
+        Add screenshots or screen recordings if helpful (drag and drop or paste).
 
-        Add screenshots or screen recordings if helpful (optional).
       placeholder: |
-        **Current:** The page crashes after clicking submit  
-        **Expected:** A success message should appear  
-        _You can paste images or drag and drop them here._
+        Current: The search results are empty even when valid keywords are entered  
+        Expected: Relevant results should be displayed based on the input keyword
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
 
   - type: textarea
     id: ideas
     attributes:
       label: 💡 Ideas to Fix (Optional)
       description: If you have any suggestions to fix this, add them here.
+
       placeholder: Optional
     validations:
       required: false

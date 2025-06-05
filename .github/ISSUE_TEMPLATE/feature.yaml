@@ -1,0 +1,79 @@
+---
+name: ✨ Feature Request
+about: Suggest an idea or new functionality for our project.
+title: "[FEAT]: "
+labels: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # ✨ Feature Issue
+
+        Suggest a new feature or an improvement to an existing one.
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: checkboxes
+    id: affected_repo
+    attributes:
+      label: 📦 Affected Repository
+      description: Select one or more repositories affected by this feature.
+      
+      options:
+        - label: lmu_app_client
+          value: lmu_app_client
+        - label: lmu_app_backend
+          value: lmu_app_backend
+        - label: lmu_app_collector
+          value: lmu_app_collector
+        - label: lmu_app_cms
+          value: lmu_app_cms
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 👥 Context
+      description: |
+        Describe what the app should have and why it needs to be implemented.  
+        What's the user need, goal, or problem this feature addresses?
+
+      placeholder: ""
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: business_logic
+    attributes:
+      label: 🧠 Business Logic
+      description: |
+        Explain the functional or business-side requirements.  
+        What rules, goals, workflows, or processes define this feature?
+
+      placeholder: ""
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+  - type: textarea
+    id: technical
+    attributes:
+      label: ⚙️ Technical
+      description: |
+        Outline any technical implementation details or constraints.  
+        Suggested architecture, dependencies, limitations, or technical ideas.
+
+      placeholder: ""
