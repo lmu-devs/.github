@@ -3,6 +3,7 @@ name: ✨ Feature Request
 about: Suggest an idea or new functionality for our project.
 title: "[FEAT]: "
 labels: ''
+issue_type: "Feature"
 assignees: ''
 ---
 
@@ -22,6 +23,7 @@ _Select one or more:_
 
 - [ ] `lmu_app_client`
 - [ ] `lmu_app_backend`
+- [ ] `lmu_app_collector`
 - [ ] `lmu_app_cms`
 
 ---
