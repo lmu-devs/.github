@@ -22,7 +22,6 @@ body:
     attributes:
       label: 📝 Summary
       description: Briefly describe the bug in one or two sentences.
-
       placeholder: Button click leads to blank screen ...
     validations:
       required: true
@@ -55,8 +54,7 @@ body:
       label: ⚠️ Current vs. Expected Behavior
       description: |
         What is happening now, and what did you expect to happen instead?
-        Add screenshots or screen recordings if helpful (drag and drop or paste).
-
+        Add screenshots or screen recordings if helpful.
       placeholder: |
         Current: The search results are empty even when valid keywords are entered  
         Expected: Relevant results should be displayed based on the input keyword
@@ -73,7 +71,6 @@ body:
     attributes:
       label: 💡 Ideas to Fix (Optional)
       description: If you have any suggestions to fix this, add them here.
-
-      placeholder: Check the API endpoint for errors or missing data.
+      placeholder: Check the API endpoint for errors or missing data ...
     validations:
       required: false
