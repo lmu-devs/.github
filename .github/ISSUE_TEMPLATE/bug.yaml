@@ -1,0 +1,58 @@
+---
+name: 🐛 Bug Report Yaml
+description: Report an unexpected problem, error, or behavior.
+title: "[BUG]: "
+labels: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🐛 Bug Issue
+
+        Report something that isn't working as expected.
+
+  - type: input
+    id: summary
+    attributes:
+      label: 📝 Summary
+      description: Briefly describe the bug in one or two sentences.
+      placeholder: e.g. "Button click leads to blank screen"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🧪 Steps to Reproduce
+      description: List the steps to reproduce the bug.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Observe '...'
+    validations:
+      required: true
+
+  - type: textarea
+    id: behavior
+    attributes:
+      label: ⚠️ Current vs. Expected Behavior
+      description: |
+        What is happening now, and what did you expect to happen instead?
+
+        Add screenshots or screen recordings if helpful (optional).
+      placeholder: |
+        **Current:** The page crashes after clicking submit  
+        **Expected:** A success message should appear  
+        _You can paste images or drag and drop them here._
+    validations:
+      required: true
+
+  - type: textarea
+    id: ideas
+    attributes:
+      label: 💡 Ideas to Fix (Optional)
+      description: If you have any suggestions to fix this, add them here.
+      placeholder: Optional
+    validations:
+      required: false

@@ -7,11 +7,6 @@ assignees: ''
 ---
 
 # 🐛 Bug Issue
-Suggest a new feature or an improvement to an existing one.
-
----
-
-# 🐛 Bug Report
 
 Report something that isn't working as expected.
 
