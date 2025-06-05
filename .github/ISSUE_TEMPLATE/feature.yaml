@@ -24,15 +24,11 @@ body:
       description: Select one or more repositories affected by this feature.
       options:
         - label: lmu_app_client
-          value: lmu_app_client
         - label: lmu_app_backend
-          value: lmu_app_backend
         - label: lmu_app_collector
-          value: lmu_app_collector
         - label: lmu_app_cms
-          value: lmu_app_cms
-      validations:
-        required: true
+    validations:
+      required: true
 
   - type: markdown
     attributes:
@@ -46,9 +42,9 @@ body:
       description: |
         Describe what the app should have and why it needs to be implemented.  
         What's the user need, goal, or problem this feature addresses?
-      placeholder: ""
-      validations:
-        required: true
+      placeholder: ...
+    validations:
+      required: true
 
   - type: markdown
     attributes:
@@ -62,9 +58,9 @@ body:
       description: |
         Explain the functional or business-side requirements.  
         What rules, goals, workflows, or processes define this feature?
-      placeholder: ""
-      validations:
-        required: true
+      placeholder: ...
+    validations:
+      required: true
 
   - type: markdown
     attributes:
@@ -78,6 +74,6 @@ body:
       description: |
         Outline any technical implementation details or constraints.  
         Suggested architecture, dependencies, limitations, or technical ideas.
-      placeholder: ""
-      validations:
-        required: true
+      placeholder: ...
+    validations:
+      required: true
