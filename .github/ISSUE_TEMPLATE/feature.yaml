@@ -1,6 +1,6 @@
 ---
 name: ✨ Feature Request
-about: Suggest an idea or new functionality for our project.
+description: Suggest an idea or new functionality for our project.
 title: "[FEAT]: "
 labels: []
 assignees: []
@@ -22,7 +22,7 @@ body:
     attributes:
       label: 📦 Affected Repository
       description: Select one or more repositories affected by this feature.
-      
+
       options:
         - label: lmu_app_client
           value: lmu_app_client

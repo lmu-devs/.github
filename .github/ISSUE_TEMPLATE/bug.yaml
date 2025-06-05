@@ -74,6 +74,6 @@ body:
       label: 💡 Ideas to Fix (Optional)
       description: If you have any suggestions to fix this, add them here.
 
-      placeholder: Optional
+      placeholder: Check the API endpoint for errors or missing data.
     validations:
       required: false
